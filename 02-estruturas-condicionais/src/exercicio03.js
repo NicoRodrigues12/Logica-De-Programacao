@@ -4,6 +4,7 @@ var placa = leia.question("DIGITE SUA PLACA: ");
 var ud = placa[placa.length - 1];
 
 // IF...ELSE
+
 if (ud === '0' || ud === '1') {
     console.log("VOCÊ NÃO PODE RODAR NA SEGUNDA-FEIRA");
 } else if (ud === '2' || ud === '3') {
