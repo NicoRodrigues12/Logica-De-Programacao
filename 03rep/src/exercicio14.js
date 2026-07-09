@@ -1,12 +1,12 @@
 import leia from 'readline-sync'
 
-var numero = leia.questionInt("Digita um numero ai : ")
-var numerodig;
-var contador = 1;
+var numero = leia.questionInt("Digite um numero: ");
 
-while(contador <= numero){
-console.log("tabuada : " + (numero * contador))
+var fat = 1;
 
-numerodig = numero
-contador++;
+while (numero > 0) {
+    fat = fat * numero;
+    numero--;
 }
+
+console.log("O fatorial eh: " + fat);
