@@ -1,9 +1,9 @@
 import leia from 'readline-sync'
-const PAREDE = "⬜";
-const VAZIO = "⬛";
+const PAREDE = "🟪";
+const VAZIO = "⬜";
 const CABECA = "🟢";
 const CORPO = "🟩";
-const COMIDA = "🔴";
+const COMIDA = "🍆";
 const largura = 30
 const altura = 15 
 
@@ -29,15 +29,33 @@ for(var y = -1; y <= altura; y++){
 
     for (var x = -1; x <= largura; x++){
             if(x ===-1 || x === largura || y ===-1 || y === altura){
-                linha += PAREDE   
+                linha += PAREDE;   
                 }else if (x === comidaX  && y === comidaY){
-                linha += COMIDA
+                linha += COMIDA;
                 }else{
-                linha += VAZIO
+                var desenhougiboia = false;
+                
+                for(var i = 0; 1 < cobraX.length; i++){
+if (cobraX[i] === x && cobraY[i] === y){
+     
+
+    if(i === 0){
+        linha += CABECA;
+    } else {
+        linha += CORPO;
+    }
+desenhougiboia = true;
+}
+                }
+
+                if(desenhougiboia === false){
+                    linha += VAZIO
+                }
+
             }
         }
-        tela +=linha + '\n'
+        tela +=linha + '\n';
     }
     process.stdout.write('\x1b[H' + tela);
 }
-desenhar()
+desenhar();
