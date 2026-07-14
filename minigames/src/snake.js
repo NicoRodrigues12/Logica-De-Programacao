@@ -104,14 +104,38 @@ posicao = false;
 
 function movimento(){
 var novaposicaox = cobraX[0];
-var novaposicaoy = cobray[0];
+var novaposicaoy = cobraY[0];
 
 switch(direcao){
     case "w":
         novaposicaoy--;
-}
+        break;
+        case "s":
+            novaposicaoy++
+            break;
+            case "a":
+                novaposicaox--;
+                break;
+                case "d":
+                    novaposicaox++;
+                    break;
+
 
 }
+
+cobraX.unshift(novaposicaox)
+cobraY.unshift(novaposicaoy)
+
+
+cobraX.pop()
+cobraY.pop()
+}
+
+setInterval(() => {
+    movimento();
+    desenhar();
+
+}, 0.000000000000000000000000000000000000000000000000000000001)
 
 sortear()
 desenhar();
