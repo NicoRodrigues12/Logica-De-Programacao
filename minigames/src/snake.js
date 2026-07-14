@@ -7,8 +7,8 @@ const CABECA = "🟢";
 const CORPO = "🟩";
 const COMIDA = "🔴";
 
-const LARGURA = 70; // X
-const ALTURA = 50; // Y
+const LARGURA = 60; // X
+const ALTURA = 40; // Y
 
 var cobraX = [4, 3, 2, 1];
 var cobraY = [7, 7, 7, 7];
@@ -46,6 +46,7 @@ if(key.name === "s" && direcao !== "s"){
 
    if(key.name === "q"){
         gameOver === true;
+        process.exit();
     }
 })
 
@@ -123,10 +124,27 @@ switch(direcao){
 
 }
 
-if(novaposicaox < 0 || novaposicaox >= LARGURA || novaposicaoy <0 || novaposicaoy >= ALTURA){
-    gameOver = true;
-    return;
+// if(novaposicaox < 0 || novaposicaox >= LARGURA || novaposicaoy <0 || novaposicaoy >= ALTURA){
+//     gameOver = true;
+//     return;
+// }
+
+if(novaposicaox < 0){
+    novaposicaox = LARGURA -1
 }
+
+if(novaposicaox >= LARGURA ){
+    novaposicaox = 0;
+}
+
+if(novaposicaoy < 0){
+    novaposicaoy = ALTURA -1
+}
+
+if(novaposicaoy >= ALTURA ){
+    novaposicaoy = 0;
+}
+
 
 cobraX.unshift(novaposicaox)
 cobraY.unshift(novaposicaoy)
