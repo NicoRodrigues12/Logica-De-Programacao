@@ -7,11 +7,11 @@ const CABECA = "🟢";
 const CORPO = "🟩";
 const COMIDA = "🔴";
 
-const LARGURA = 30; // X
-const ALTURA = 15; // Y
+const LARGURA = 70; // X
+const ALTURA = 50; // Y
 
-var cobraX = [10, 9, 8, 7];
-var cobraY = [7, 7, 7, 7];
+var cobraX = [35, 34, 33, 32, 31, 30, 29, 28, 37, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+var cobraY = [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7];
 
 var comidaX = Math.floor(Math.random() * LARGURA);
 var comidaY = Math.floor(Math.random() * ALTURA);
@@ -130,6 +130,15 @@ cobraY.unshift(novaposicaoy)
 cobraX.pop()
 cobraY.pop()
 }
+
+var jogo = setInterval(() => {
+    if(gameOver === true){
+        clearInterval(jogo);
+        process.stdout.write("\xb1[?")
+        console.log("\n=== PERDEU, ABUSADO ===")
+        console.log("Pontuação final : " + pontos)
+    }
+})
 
 setInterval(() => {
     movimento();
