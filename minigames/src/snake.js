@@ -145,13 +145,27 @@ if(novaposicaoy >= ALTURA ){
     novaposicaoy = 0;
 }
 
+for(var i = 0; i < cobraX.length; i++){
+    if(novaposicaox === cobraX[i] && novaposicaoy === cobraY){
+        gameOver = true;
+        return;
+    }
+}
+
+
 
 cobraX.unshift(novaposicaox)
 cobraY.unshift(novaposicaoy)
 
-
-cobraX.pop()
+if(novaposicaox === comidaX && novaposicaoy === comidaY){
+    pontos+= 10;
+    sortear();
+}else{
+    cobraX.pop()
 cobraY.pop()
+}
+
+
 }
 
 var jogo = setInterval(() => {
@@ -168,7 +182,7 @@ setInterval(() => {
     movimento();
     desenhar();
 
-}, 0.000000000000000000000000000000000000000000000000000000001)
+}, 150)
 
 sortear()
 desenhar();
