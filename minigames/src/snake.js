@@ -10,8 +10,8 @@ const COMIDA = "🔴";
 const LARGURA = 70; // X
 const ALTURA = 50; // Y
 
-var cobraX = [35, 34, 33, 32, 31, 30, 29, 28, 37, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-var cobraY = [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7];
+var cobraX = [4, 3, 2, 1];
+var cobraY = [7, 7, 7, 7];
 
 var comidaX = Math.floor(Math.random() * LARGURA);
 var comidaY = Math.floor(Math.random() * ALTURA);
@@ -44,8 +44,8 @@ if(key.name === "s" && direcao !== "s"){
     direcao = "s"
 }
 
-    if(key.name === "q"){
-        process.exit();
+   if(key.name === "q"){
+        gameOver === true;
     }
 })
 
@@ -123,6 +123,11 @@ switch(direcao){
 
 }
 
+if(novaposicaox < 0 || novaposicaox >= LARGURA || novaposicaoy <0 || novaposicaoy >= ALTURA){
+    gameOver = true;
+    return;
+}
+
 cobraX.unshift(novaposicaox)
 cobraY.unshift(novaposicaoy)
 
@@ -137,6 +142,7 @@ var jogo = setInterval(() => {
         process.stdout.write("\xb1[?")
         console.log("\n=== PERDEU, ABUSADO ===")
         console.log("Pontuação final : " + pontos)
+        process.exit();
     }
 })
 
