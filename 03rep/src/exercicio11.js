@@ -43,3 +43,62 @@ console.log("Menor altura : " + menorAltura)
 console.log("Media altura mulheres : " + mediamulheres)
 console.log("Media da população : " + mediapopulacao)
 console.log("Percentual de homens : " + percentualHomens + "%")
+
+
+
+// WHILE!!!
+
+
+// const QTD_PESSOAS = 10
+// var menorAltura;
+// var maiorAltura;
+// var contador = 0;
+
+
+
+// var quantidadeHomens = 0;
+// var quantidadeMulheres = 0;
+
+// var somaAlturas = 0
+// var somaMulheres = 0
+
+
+
+// while(contador <= QTD_PESSOAS){
+//     console.log("==== PESSOA " + (contador + 1) + " ====")
+    
+//     var altura = leia.questionFloat("Digite sua altura : ")
+//     var gen = leia.keyInSelect(["Masc", "Fem"], "Selecione o Genero : ");
+
+//     if(contador === 1){
+//         menorAltura = altura
+//         maiorAltura = altura
+//     }else if(altura > maiorAltura){
+//         maiorAltura = altura
+        
+//     }else if(altura < menorAltura){
+//         menorAltura = altura
+//     }
+
+//     if (gen == 1) {
+//         somaMulheres += altura;
+//         quantidadeMulheres++;
+//     } else {
+//         quantidadeHomens++;
+//     }
+
+//     var mediamulheres = somaMulheres / quantidadeMulheres
+//     var mediapopulacao = somaAlturas / 10
+
+//     var percentualHomens = (quantidadeHomens / 10) * 100;
+
+    
+//     contador++
+// }
+//     console.log("=== Resultado ===")
+//     console.log("Maior altura : " + maiorAltura)
+//     console.log("Menor altura : " + menorAltura)
+//     console.log("Media altura mulheres : " + mediamulheres)
+//     console.log("Media da população : " + mediapopulacao)
+//     console.log("Percentual de homens : " + percentualHomens + "%")
+

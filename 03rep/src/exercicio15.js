@@ -1,14 +1,13 @@
 import leia from 'readline-sync'
 
 
-var numero = leia.questionInt("digite um numero ")
-var binario = " "
-var valor = numero
-while(valor / 2){
-    var resul = valor / 2
-    var resto = valor % 2
-    valor = Math.floor(valor / 2)
+var numero = leia.questionInt("digite um numero em decimal : ")
+var binario = ""
 
+while(numero > 0){
+    binario = (numero % 2) + binario
+    numero = Math.floor(numero / 2)
 console.log(binario)
 
 }
+console.log(binario)

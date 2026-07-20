@@ -19,7 +19,8 @@ while (contador <= qtd) {
     if (contador == 1) {
         maiorMedia = media;
         nomeMaiorMedia = nome;
-    } else if (media > maiorMedia) {
+    } 
+    else if (media > maiorMedia) {
         maiorMedia = media;
         nomeMaiorMedia = nome;
     }

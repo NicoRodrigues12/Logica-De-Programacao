@@ -7,8 +7,8 @@ const CABECA = "🟢";
 const CORPO = "🟩";
 const COMIDA = "🔴";
 
-const LARGURA = 60; // X
-const ALTURA = 40; // Y
+const LARGURA = 50; // X
+const ALTURA = 30; // Y
 
 var cobraX = [4, 3, 2, 1];
 var cobraY = [7, 7, 7, 7];
@@ -182,7 +182,7 @@ setInterval(() => {
     movimento();
     desenhar();
 
-}, 150)
+}, 50)
 
 sortear()
 desenhar();

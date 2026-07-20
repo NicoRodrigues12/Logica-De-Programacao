@@ -5,6 +5,9 @@ var tentativas = 0;
 
 var jogo = leia.keyInSelect(["PvP", "PvE"])
 
+if(jogo == 1){
+var dificuldade = leia.keyInSelect(["facil", "medio", "dificil"])
+}
 
 if(jogo == 0){
 var senha = "1234"
@@ -25,8 +28,56 @@ if(digitesenha === senha){
         }
  
 
-}else if(jogo == 1){
+}
+
+
+
+
+else if(jogo == 1 && dificuldade == 2){
 var numeroMagico = Math.floor(Math.random() * 1000) + 1;
+
+var tentativa;
+var qtdTentativas = 0;
+
+do {
+    tentativa = leia.questionInt("Digite sua tentativa: ");
+    qtdTentativas++;
+    tentativa;
+
+    if(tentativa > numeroMagico) {
+        console.log("O número mágico MENOR!!")
+    }else if(tentativa < numeroMagico){
+        console.log("O número mágico é MAIOR!!")
+    } else {
+        console.log("Parabéns!! Você acertou o número mágico!!!");
+        console.log("E só precisou de " + qtdTentativas + " tentativas!");
+    }
+}while(tentativa !== numeroMagico);
+
+}else if (jogo == 1 && dificuldade == 1){
+var numeroMagico = Math.floor(Math.random() * 100) + 1;
+
+var tentativa;
+var qtdTentativas = 0;
+
+do {
+    tentativa = leia.questionInt("Digite sua tentativa: ");
+    qtdTentativas++;
+    tentativa;
+
+    if(tentativa > numeroMagico) {
+        console.log("O número mágico MENOR!!")
+    }else if(tentativa < numeroMagico){
+        console.log("O número mágico é MAIOR!!")
+    } else {
+        console.log("Parabéns!! Você acertou o número mágico!!!");
+        console.log("E só precisou de " + qtdTentativas + " tentativas!");
+    }
+}while(tentativa !== numeroMagico);
+
+}else if(jogo == 1 && dificuldade == 0){
+
+var numeroMagico = Math.floor(Math.random() * 10) + 1;
 
 var tentativa;
 var qtdTentativas = 0;
