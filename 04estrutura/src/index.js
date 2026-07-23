@@ -12,11 +12,16 @@ case 0 :
 exercicio01();
 break;
 case 1 :
-    //Chamar Exercicio 02
+   exercicio02()
     break;
     case 2 :
    exercicio03();
         
         break;
-
+  case 3 :
+    exercicio04();
+    break;
+    case 4 :
+        exercicio05();
+        break;
 }

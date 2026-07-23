@@ -1,7 +1,7 @@
 import leia from 'readline-sync'
 import { pedirNumeros } from '../utils/pedirNumeros.js'
 
-export function exercicio02(){
+export function exercicio04(){
 
 var numeros = pedirNumeros(15)
 var maiores = []
