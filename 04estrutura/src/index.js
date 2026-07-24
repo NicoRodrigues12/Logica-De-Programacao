@@ -1,6 +1,7 @@
 import leia from 'readline-sync'
 import { exercicio03 } from './explicacao2.js'
 import { exercicio01 } from './exercicio01.js';
+import { exercicio06 } from './exercicio06.js';
 
 
 console.log("----- LISTA DE EXERCICIOS -----")
@@ -24,4 +25,10 @@ case 1 :
     case 4 :
         exercicio05();
         break;
-}
+        case 5 :
+            exercicio06()
+            break;
+            case 6 : 
+            exercicio07()
+break;
+        }
