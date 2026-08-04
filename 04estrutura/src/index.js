@@ -17,7 +17,6 @@ case 1 :
     break;
     case 2 :
    exercicio03();
-        
         break;
   case 3 :
     exercicio04();
@@ -31,4 +30,10 @@ case 1 :
             case 6 : 
             exercicio07()
 break;
+case 7 :
+    exercicio08()
+    break;
+    case 8 :
+        exercicio09()
+        break;
         }

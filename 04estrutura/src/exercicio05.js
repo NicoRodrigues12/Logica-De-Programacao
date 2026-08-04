@@ -18,14 +18,6 @@ inverso.push(numeros[i])
 console.log("---INVERTIDO---")
 console.log(inverso)
 
-
-console.log("-----Detlhes da Inversão!!!-----")
-for (var i = 0; i < numeros.length; i++){
-    
-    
-
-}
-
 }
 
 
