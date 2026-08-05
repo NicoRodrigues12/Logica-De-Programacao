@@ -7,9 +7,9 @@ var total = 1000
 
 for(var i = 0; i < total; i++){
 
-var resultado = Math.floor(Math.random() * 6)
+var resultado = Math.floor(Math.random() * 6) + 1
 
- dado[resultado]++
+ dado[resultado - 1]++
 }
 var viciado = false
 
@@ -37,4 +37,3 @@ for(var i = 0; i < dado.length; i++){
     }
 }
 
-exercicio12()

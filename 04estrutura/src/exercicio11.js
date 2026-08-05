@@ -34,4 +34,3 @@ for(var i = 0; i < matriz.length; i++){
     console.log(matriz)
 }
 
-exercicio11()

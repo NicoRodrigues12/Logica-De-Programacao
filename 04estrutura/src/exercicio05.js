@@ -21,4 +21,3 @@ console.log(inverso)
 }
 
 
-exercicio05()

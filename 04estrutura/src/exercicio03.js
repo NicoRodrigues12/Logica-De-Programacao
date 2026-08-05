@@ -16,4 +16,3 @@ console.log(nm[i])
 }
 }
 
-exercicio03()

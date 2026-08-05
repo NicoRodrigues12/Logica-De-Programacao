@@ -15,7 +15,7 @@ export function exercicio01() {
     }
 }
 
-exercicio01();
+
 
 
 

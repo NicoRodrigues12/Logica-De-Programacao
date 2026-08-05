@@ -20,4 +20,3 @@ console.log("Numeros maiores ou iguais a 10 : " + maiores[i])
 
 }
 
-exercicio02()

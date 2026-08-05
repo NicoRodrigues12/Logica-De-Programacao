@@ -24,4 +24,3 @@ console.log(vetorum)
 
 
 
-exercicio09()

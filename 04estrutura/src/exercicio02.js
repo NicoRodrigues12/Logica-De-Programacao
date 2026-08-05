@@ -21,4 +21,3 @@ for(var i = 0; i < renkrenk.length; i++){
 }
 
 
-exercicio02()

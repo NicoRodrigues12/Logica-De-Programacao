@@ -35,4 +35,3 @@ console.log("vetor final : " + vetorkleiton)
 
 
 
-exercicio08()

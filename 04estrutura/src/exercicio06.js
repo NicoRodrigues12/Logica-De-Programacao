@@ -1,11 +1,11 @@
 import leia from 'readline-sync'
-import { gerarNumero, gerarNumeroMaior } from '../utils/gerarNumero.js'
+import { gerarNumero } from '../utils/gerarNumero.js'
 
 var minimas = []
 var maximas = []
 
 
-function exercicio06(){
+export function exercicio06(){
 
 for(var dia = 0; dia < 30; dia++){
 
@@ -27,4 +27,3 @@ console.log("Temperaturas maximas : ", maximas)
 
 }
 
-exercicio06();
